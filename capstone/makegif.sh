@@ -1,0 +1,1 @@
+ffmpeg -f image2 -framerate 6 -filter_complex "[0]reverse[r];[0][r]concat=n=2:v=1:a=0"  -i slides/%02d.png slides.gif
